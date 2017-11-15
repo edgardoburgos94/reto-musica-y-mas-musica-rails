@@ -1,0 +1,8 @@
+<h1>Artistas</h1>
+<% @artists.each do |artista| %>
+  <div class="artist">
+    <img src="<%= artista.image_url%> " alt="">
+    <h2><%= artista.name %> </h2>
+    <%= link_to "Ver más", artist_path(artista) %>
+  </div>
+<% end %>
